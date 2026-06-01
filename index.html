@@ -73,16 +73,22 @@
         display: flex;
       }
     .left-box {
-        width: 60%;
-        padding-right: 20px;
+        width: 100%;
     }
     .small-box {
-        width: 75%;
+		text-align: center;
+		height: 45%;
+        width: 45%;
     }
     .right-box {
         text-align: right;
         flex: 1 1 auto;
     }
+	.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
   .column {
   float: left;
@@ -111,7 +117,11 @@
       text-indent: 1em;
       margin-top: 0.25em;
       margin-bottom: 0.25em
-      }
+  }
+  img {
+	  width: 100%;
+	  height: 100%;
+  }
   a:link {
       color: blue;
       text-decoration: none
@@ -127,6 +137,11 @@
   <body>
     <div></div>
     <h1>Nicholas Turk: Portfolio</h1>
+	<div class="center">
+	<div class="small-box">
+	  <img src="images/nicky-turk.JPG" alt="The man himself"/>
+	</div>
+	</div>
 	<div class="row">
 	  <div class="column">
 	  <section class="pg-header-heading" id="pg-header" lang="en" style="background-color: lightgrey;"><h2 id="pg-header-heading" title="Imagine"><a href="imagine.html">Imagine</a></h2>
@@ -141,11 +156,8 @@
       </section>
 	  </div>
 	</div>
-    <div class="side-by-side" style="background-color: white;">
-        <div class="left-box">
-            Portfolio time, baybee
-        </div>
-        <div class="fill-width"></div>
-    </div>
+	<div class="left-box">
+		Welcome to my portfolio. This webpage reflects my work in the Mississippi Teacher Corps. The above links will take you to pages that encompass my growth as an educator in all the stated categories.
+	</div>
   </body>
 </html>
